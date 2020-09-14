@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router';
-import Icon from '../components/Icon';
 
 export class Header extends Component {
   render() {
@@ -10,8 +9,7 @@ export class Header extends Component {
       <div className="header">
         <h3 className="title">
           <Link target="_blank" to={config.url || '/'}>
-            <Icon name="home" />
-            <span>{config.title || 'You have no title!'}</span>
+            <span>{config.title || 'Website Admin Panel'}</span>
           </Link>
         </h3>
         <span className="version">v{process.env.REACT_APP_VERSION}</span>

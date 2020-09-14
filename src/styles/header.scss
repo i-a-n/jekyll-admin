@@ -3,19 +3,19 @@
   align-items: center;
   justify-content: space-between;
   height: 60px;
-  background-color: white;
+  background-color: $theme-blue-light;
   padding: 0 40px;
-  border-bottom: 1px solid lighten($border-color, 9%);
+  border-bottom: 1px solid darken($border-color, 9%);
   .title {
     font-weight: normal;
     a {
-      color: #444444;
+      color: $theme-gray-dark;
       &:hover {
         color: black;
       }
     }
   }
   .version {
-    color: $inactive-gray;
+    color: $theme-blue-dark;
   }
 }
